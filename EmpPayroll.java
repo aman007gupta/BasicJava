@@ -5,9 +5,8 @@ public class EmpPayroll {
 	public static final int NUM_OF_DAYS = 20;
 	public static final int TOTAL_HRS = 50;
 
-	public static void main(String args[]) {
-		System.out.println("Welcome to Emp Payroll");
-		int empHrs = 0;
+	public static int computeEmpWage() {
+                int empHrs = 0;
 		int totalHrs = 0;
 		int totalWage = 0;
 		int totalEmpWage = 0;
@@ -32,5 +31,12 @@ public class EmpPayroll {
 		totalWage = totalHrs * WAGE_PER_HOUR;
 		System.out.println("Total wage of emp: " + totalWage);
 		System.out.println("Total Days: " + totalDays + " Total Hrs: " + totalHrs);
+
+		return totalWage;
+	}
+
+	public static void main(String args[]) {
+		System.out.println("Welcome to Emp Payroll");
+		computeEmpWage();
 	}
 }

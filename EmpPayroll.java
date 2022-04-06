@@ -26,10 +26,11 @@ public class EmpPayroll {
 					empHrs = 0;
 			}
 			totalHrs += empHrs; 
-			totalWage = totalHrs * WAGE_PER_HOUR;
-			totalEmpWage += totalWage;
+			//totalWage = totalHrs * WAGE_PER_HOUR;
+			//totalEmpWage += totalWage;
 		}
-		System.out.println("Total wage of emp: " + totalEmpWage);
+		totalWage = totalHrs * WAGE_PER_HOUR;
+		System.out.println("Total wage of emp: " + totalWage);
 		System.out.println("Total Days: " + totalDays + " Total Hrs: " + totalHrs);
 	}
 }
